@@ -22,7 +22,7 @@ class Posnet
             "<mid>" . $bank['posnet_merchant_id'] . "</mid>" .
             "<tid>" . $bank['posnet_terminal_id'] . "</tid>" .
             "<oosRequestData>" .
-            "<posnetid>" . $bank['posnet_posnet_id'] . "</posnetid>" .
+            "<posnetid>" . $bank['posnet_id'] . "</posnetid>" .
             "<ccno>" . $bank['cc_number'] . "</ccno>" .
             "<expDate>" . $expDate . "</expDate>" .
             "<cvc>" . $bank['cc_cvv2'] . "</cvc>" .
@@ -87,7 +87,7 @@ class Posnet
                 'posnetData' => $data1,
                 'posnetData2' => $data2,
                 'mid' => $bank['posnet_merchant_id'],
-                'posnetID' => $bank['posnet_posnet_id'],
+                'posnetID' => $bank['posnet_id'],
                 'digest' => $sign,
                 'vftCode' => "K001",
                 'merchantReturnURL' => $bank['success_url'],
