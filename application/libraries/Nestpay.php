@@ -36,7 +36,7 @@ class Nestpay
             'failUrl' => $fail_url,
             'rnd' => $rnd,
             'hash' => $hash,
-            'storetype' => "3d",
+            'storetype' => "3d_pay",
             'lang' => "tr",
             'currency' => "949"
         );
